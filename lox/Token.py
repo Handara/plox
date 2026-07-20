@@ -1,7 +1,7 @@
 from typing import Final
 from typing import Self
 
-import TokenType
+from .TokenType import TokenType
 
 class Token:
     TYPE: Final[TokenType]

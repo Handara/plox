@@ -1,5 +1,6 @@
 import sys
-import Lox
+
+from .Lox import Lox
 
 def main(args):
     """Entry point for the plox interpreter"""
@@ -13,4 +14,3 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-    

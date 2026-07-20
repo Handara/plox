@@ -22,7 +22,7 @@ class TokenType(Enum):
     EQUAL         = auto()
     EQUAL_EQUAL   = auto()
     GREATER       = auto()
-    GREAT_EQUAL   = auto()
+    GREATER_EQUAL = auto()
     LESS          = auto()
     LESS_EQUAL    = auto()
 
