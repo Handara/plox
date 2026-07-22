@@ -1,9 +1,20 @@
+"""Package entry point: run with `python -m lox [script]`.
+
+`__main__.py` is the file Python executes when a package is run with the
+`-m` flag, which is why the CLI argument handling lives here.
+"""
+
 import sys
 
 from .Lox import Lox
 
-def main(args):
-    """Entry point for the plox interpreter"""
+def main():
+    """Dispatch based on how many command-line arguments were given.
+
+    No args  -> start the interactive REPL.
+    One arg  -> treat it as a path and run that script.
+    More     -> print usage and exit with status 64.
+    """
     if len(args) > 1 :
         print("Usage : jlox [script]")
         exit(64)
